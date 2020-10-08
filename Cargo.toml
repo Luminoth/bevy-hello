@@ -11,7 +11,7 @@ name = "bevy-hello"
 path = "src/main.rs"
 
 [dependencies]
-bevy = "0.1"
+bevy = "0.2"
 
 [profile.release.build-override]
 opt-level = 0

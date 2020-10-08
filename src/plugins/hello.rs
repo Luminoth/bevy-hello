@@ -24,7 +24,7 @@ impl HelloPlugin {
 impl Plugin for HelloPlugin {
     fn build(&self, app: &mut AppBuilder) {
         app.add_startup_system(HelloPlugin::add_people.system())
-            .add_resource(systems::GreetTimer(Timer::from_seconds(2.0)))
+            .add_resource(systems::GreetTimer(Timer::from_seconds(2.0, true)))
             .add_system(systems::greet_people.system());
     }
 }
